@@ -1,12 +1,12 @@
-package net.examplemod;
+package rbasamoyai.itemattachments;
 
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ExampleMod {
-    public static final String MOD_ID = "examplemod";
-    public static final String NAME = "Example Mod";
+public class ItemAttachmentsMod {
+    public static final String MOD_ID = "itemattachments";
+    public static final String NAME = "Item Attachments";
     public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
 
 
