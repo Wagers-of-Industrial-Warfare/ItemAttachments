@@ -1,24 +1,25 @@
 modLoader = "javafml"
 loaderVersion = "[${forge_version},)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "MIT License"
 
 [[mods]]
-modId = "examplemod"
+modId = "itemattachments"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
-description = '''This is an example description! Tell everyone what your mod is about!'''
+displayName = "Item Attachments"
+authors = "rbasamoyai"
+description = """An API and screen utility for simple and immersive item attachments.
+Inspired by Unturned and Crayfish's Gun Mod."""
 logoFile = "icon.png"
 
-[[dependencies.examplemod]]
+[[dependencies.itemattachments]]
 modId = "forge"
 mandatory = true
 versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.itemattachments]]
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version}"

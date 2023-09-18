@@ -1,6 +1,6 @@
-package net.examplemod.forge;
+package rbasamoyai.itemattachments.forge;
 
-import net.examplemod.ExampleMod;
+import rbasamoyai.itemattachments.ItemAttachmentsMod;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -8,16 +8,16 @@ import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(ExampleMod.MOD_ID)
-public class ExampleModForge {
+@Mod(ItemAttachmentsMod.MOD_ID)
+public class ItemAttachmentsModForge {
 
-    public ExampleModForge() {
+    public ItemAttachmentsModForge() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
 
-        ExampleMod.init();
+        ItemAttachmentsMod.init();
 
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> ExampleModClientForge.clientInit(modBus, forgeBus));
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> IAModClientForge.clientInit(modBus, forgeBus));
     }
 
 }
